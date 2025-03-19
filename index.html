@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Gestión de pruebas</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BANCHI</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <h1>Aplicativo de Gestión de Pruebas</h1>
+        <p>Registro de pruebas AME</p>
+        <a href="#menu" class="btn-primary">Iniciar</a> <!--Hipervinculo para conocer servicios-->
+    </header>
+
+    <main>
+        <section id="menu" class="cards-container">
+            <h2>Seleccione una opción</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Agregar prueba</h3>
+                    <p>Registro de prueba entrante y datos correspondientes al análisis</p>
+                    <button onclick="mostrarFormulario('nueva-prueba')">Iniciar Prueba</button>
+                </div>
+                <div class="card">
+                    <h3>Historial de Pruebas</h3>
+                    <p>Conocerpruebas anteriores y editar pruebas en curso</p>
+                    <button onclick="mostrarFormulario('historial-pruebas')">Historial Pruebas</button>
+                </div>
+                <div class="card">
+                    <h3>Gestión de Empresas</h3>
+                    <p>Registrar nuevas empresas o modificar datos</p>
+                    <button onclick="mostrarFormulario('gestionar-empresas')">Modificar Empresas</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenedor"></section>
+
+        <section id="acerca" class="about-section">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos una empresa dedicada a brindar las mejores soluciones para</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../static/app.js"></script>
+</body>
+</html>
